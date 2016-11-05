@@ -45,8 +45,7 @@ Ostatnie, szóste zajęcia, prowadzone przez Annę Korczak, dotyczyły pierwszej
 - na minute 100-110 uciśnięć, do 4-5 centymetrów (nie da rady zrobić za mocnej reanimacji)
 - zapas tlenu w tętnicach jest 7-10 minut ale o tym się nie mówi, żeby nie zatrzymywać resuscytacji
 
-<amp-youtube data-videoid="n5hP4DIBCEE" layout="responsive" width="480" height="270"></amp-youtube>
-
+{% include youtube.html video="http://www.youtube.com/embed/n5hP4DIBCEE?color=white&theme=light" %}
 
 ##### Opatrunek
 - opatrunek uciskowy w miejscu rany (nie nad tętnicą - to stara szkoła - opatrunek centralnie na tętnicy)
@@ -80,7 +79,5 @@ Ostatnie, szóste zajęcia, prowadzone przez Annę Korczak, dotyczyły pierwszej
 - osoby dorosłe klepiemy w plecy jak nie wystarczy to łapiemy za podbrzusze
 - jak dziecko wiotczeje to dobrze to rozluźnia i łatwiej sięgnąć i wyciągnąć palcem, jak nie da się tego wyciągnąć to lepiej to popchnąć dalej żeby wpadło do jednego płuca
 
-<amp-youtube data-videoid="Vmb1tqYqyII" layout="responsive" width="480" height="270"></amp-youtube>
-
-
+{% include youtube.html video="http://www.youtube.com/embed/Vmb1tqYqyII?color=white&theme=light" %}
 
