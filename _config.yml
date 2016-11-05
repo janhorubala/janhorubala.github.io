@@ -91,3 +91,5 @@ collections:
     permalink: /songs/:title/
   concerts:
     output: true
+  motocykl:
+    output: true

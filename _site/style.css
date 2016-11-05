@@ -96,6 +96,64 @@ table {
   }
 }
 
+.digression {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-height: 40px;
+  transition: all 0.3s ease-out;
+}
+
+.digression-input {
+  display: none;
+}
+.digression-input:checked + .digression {
+  white-space: normal;
+  max-height: 1000px;
+  transition: all 0.3s ease-out;
+}
+
+.question-input {
+  display: none;
+}
+.question-input:checked + .answer {
+  max-height: 1000px;
+  transition: all 0.15s ease-out;
+  border-top: 1px solid #dededc;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.wrap-frame {
+  display: block;
+  border: 1px solid #dededc;
+  padding: 10px 10px 10px 30px;
+  cursor: pointer;
+  position: relative;
+}
+.wrap-frame::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  width: 3px;
+  background-color: #dededc;
+  transition: background-color 0.15s ease-out;
+}
+.wrap-frame:hover:before {
+  background-color: #57ad68;
+  transition: background-color 0.15s ease-out;
+}
+
+.answer {
+  display: block;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.15s ease-out;
+}
+
 /**************/
 /* BASE RULES */
 /**************/
