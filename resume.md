@@ -4,6 +4,7 @@ title: Résumé
 ---
 
 ## Education
+
 #### Computer Science at [MIMUW](http://www.mimuw.edu.pl/){:target="_blank"} within [MISMaP](http://en.mismap.uw.edu.pl/){:target="_blank"} [2013 - 2016]
 As a licentiate thesis I created with my team [BeerIt](https://beerit.co){:target="_blank"} - mobile application (Android/iOS) for recognition beers based a photo of label. Theoretical work is availble here [Machine learning algorithms for image recognition in application for beer lovers](../assets/files/thesis_infromatics.pdf){:target="_blank"}.
 
@@ -56,6 +57,7 @@ I was working on https://www.przepisy.pl/, the biggest cooking app in Poland. At
 
 
 ## Technologies
+
 #### Frontend
 - HTML5, semantic tags, JSX, 
 - CSS3, SASS, Critical CSS, flexbox, animations
@@ -112,7 +114,6 @@ I was an organizer and camp commandant on large scout camp in 2009. I received a
 I recorded EP with my rock band Aleafonic in Narocz Studio. But there is one thing I'm still glad to [hear](https://youtu.be/-p3MrsbW_j0?t=1m33s){:target="_blank"}.
 
 
-
 #### Languges
 - Polish - native
 - English - B2
@@ -121,12 +122,18 @@ I recorded EP with my rock band Aleafonic in Narocz Studio. But there is one thi
 
 ## Courses
 
-#### Driver licence (kat. B)
-#### Motorcycle licence (kat. B)
+#### Driver licence
+
+#### Motorcycle licence - [link for materials]('/motocykl')
+
 #### Krav Maga
+
 #### Sądzia strzelecki
+
 #### Machine Learning on coursera
+
 #### Studium filozoficzno-teologiczne
+
 #### 
 
 
