@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<article class="post">
+  <h2>{{ page.title }}</h2>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  <div class="author">
+    {{ page.text }}
+  </div>
+
+  {% include disqus.html %}
+
+{% if page.video %}
+	<div class="video">
+		{% youtube page.video %}
+	</div>
+<!--  	<div class="author">
+	    Music - {{ page.music }}
+	</div>
+ -->
+ {% endif %}

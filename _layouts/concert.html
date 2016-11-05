@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+  <h2>{{ page.title }} - {{ page.date | date: "%B %e, %Y" }}</h2>
+
+  {% if page.video %}
+      {% youtube page.video %}
+  {% endif %}
+
+<br>
+<br>
+<div class="song-hr"></div>
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  <div class="author">
+    {{ page.text }}
+  </div>
+
+  {% include disqus.html %}
+
+<!--
+  <div class="author">
+    Music - {{ page.music }}
+  </div>
+ -->
