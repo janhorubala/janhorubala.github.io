@@ -3,7 +3,7 @@ layout: song
 title: Barykada
 text: Bartek Tarnowski
 music: Aleafonic
-video: https://youtu.be/o8hpNhRpXp8
+video: http://www.youtube.com/embed/o8hpNhRpXp8?color=white&theme=light
 ---
 
 Wyszliście tacy różnorodni  

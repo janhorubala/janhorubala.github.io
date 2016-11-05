@@ -3,7 +3,7 @@ layout: song
 title: Baza
 text: Janek Horubała
 music: Janek Horubała
-video: https://youtu.be/o8hpNhRpXp8
+video: http://www.youtube.com/embed/Tehx8JQbZ7w?color=white&theme=light
 ---
 
 Kiedy na harmonii Feluś zaiwania,  

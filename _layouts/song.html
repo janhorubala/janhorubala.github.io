@@ -17,10 +17,6 @@ layout: default
 
 {% if page.video %}
 	<div class="video">
-		{% youtube page.video %}
+    {% include youtube.html video=page.video %}
 	</div>
-<!--  	<div class="author">
-	    Music - {{ page.music }}
-	</div>
- -->
  {% endif %}

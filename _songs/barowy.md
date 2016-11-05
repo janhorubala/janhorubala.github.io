@@ -3,7 +3,7 @@ layout: song
 title: Barowy
 text: Bartek Tarnowski
 music: Aleafonic
-video: https://youtu.be/29IWTHiekYg
+video: http://www.youtube.com/embed/29IWTHiekYg?color=white&theme=light
 ---
 
 Czasami zwijam się w sobie i bardzo lubię ten stan  

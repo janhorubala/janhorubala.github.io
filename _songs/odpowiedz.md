@@ -3,7 +3,7 @@ layout: song
 title: Odpowiedź
 text: Julian Tuwim
 music: Aleafonic
-video: https://youtu.be/-p3MrsbW_j0
+video: http://www.youtube.com/embed/-p3MrsbW_j0?color=white&theme=light
 ---
 
 Otóż: trzeźwy do domu nie wracam.  
