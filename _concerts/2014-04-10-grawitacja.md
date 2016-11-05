@@ -1,7 +1,7 @@
 ---
 layout: concert
 title: Grawitacja
-video: https://youtu.be/wIEWGA66cGE
+video: http://www.youtube.com/embed/wIEWGA66cGE?color=white&theme=light
 ---
 
 #### Setlist

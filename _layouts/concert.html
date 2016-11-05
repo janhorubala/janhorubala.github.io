@@ -5,7 +5,7 @@ layout: default
   <h2>{{ page.title }} - {{ page.date | date: "%B %e, %Y" }}</h2>
 
   {% if page.video %}
-      {% youtube page.video %}
+      {% include youtube.html video=page.video %}
   {% endif %}
 
 <br>
