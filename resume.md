@@ -1,12 +1,14 @@
 ---
-layout: post
+layout: page
 title: Résumé
+permalink: /resume/
 ---
+
 
 ## Education
 
 #### Computer Science at [MIMUW](http://www.mimuw.edu.pl/){:target="_blank"} within [MISMaP](http://en.mismap.uw.edu.pl/){:target="_blank"} [2013 - 2016]
-As a licentiate thesis I created with my team [BeerIt](https://beerit.co){:target="_blank"} - mobile application (Android/iOS) for recognition beers based a photo of label. Theoretical work is availble here [Machine learning algorithms for image recognition in application for beer lovers](../assets/files/thesis_infromatics.pdf){:target="_blank"}.
+As a licentiate thesis I created with my team [BeerIt](https://beerit.co){:target="_blank"} - mobile application (Android/iOS) for recognition beers based on a photo of label. Theoretical work is availble here [Machine learning algorithms for image recognition in application for beer lovers](../assets/files/thesis_infromatics.pdf){:target="_blank"}.
 
 #### Psychology at [WP](http://psych.strony.uw.edu.pl/){:target="_blank"} within [MISMaP](http://en.mismap.uw.edu.pl/){:target="_blank"} [2012 - 2016]
 I studied psychology in 2012 - 2016 years, but it’s bored me and I quit it before master degree. But I made some notes and presentation, maybe someone come in handy.
@@ -18,13 +20,13 @@ My notes and presentations are available [here](../assets/files/thesis_philosoph
 
 ## My projects
 
+You can read more about any of my project [here]({{ site.url }}/projects/)
+
 #### MixTube
 [MixTube](https://mixtube.co/){:target="_blank"} is a platform for collaborative party playlist. You just create new playlist, send link to friends, and everyone can add and vote for songs (no registration required). Playlist creator has a player and admin priviliges. I created mixtube with two friends from college in unforgettable summer 2015 full of [best mixes](https://mixtube.co/party/MixTube){:target="_blank"}.
 
 #### BeerIt
-[BeerIt](https://beerit.co){:target="_blank"} is a mobile app (Android/IOS) for beerlovers. You can add beers to your personal basement or wishlist, rate and comment, and above all: recognize beer basing on photo of label. 
-
-is [vivino](https://www.vivino.com/){:target="_blank"} for beers.
+[BeerIt](https://beerit.co){:target="_blank"} is a mobile app (Android/IOS) for beerlovers. You can add beers to your personal cellar or wishlist, rate and comment, and above all: recognize beer basing on photo of label. It's like [Vivino](https://www.vivino.com/){:target="_blank"} for beers.
 
 #### Send Me
 [Send Me](https://play.google.com/store/search?q=send%20me&hl=pl){:target="_blank"} is a mobile app (Android/IOS) I writed for my grandma. The app allows you to fetching photos from your facebook and instagram account (or taking new one) and send them via email. Why does my grandma need such app? Well, she's got cool [Digital Photo Frame](http://zoom.me/){:target="_blank"}, but dedicated app wasn't good enough for her (no social plugins).
@@ -124,7 +126,7 @@ I recorded EP with my rock band Aleafonic in Narocz Studio. But there is one thi
 
 #### Driver licence
 
-#### Motorcycle licence - [link for materials]('/motocykl')
+#### Motorcycle licence - [materials](/motocykl)
 
 #### Krav Maga
 

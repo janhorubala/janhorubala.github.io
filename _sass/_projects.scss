@@ -1,0 +1,52 @@
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+	.pro-tab {
+		margin: 10px;
+		width: 30%;
+		transform: translateZ(0);
+		position: relative;
+	    cursor: pointer;
+		height: 200px;
+		transition: all .3s ease;
+	    text-align: center;
+		.pro-cover {
+			transform: translateZ(0);
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-size: cover;
+	    	background-position: 50% 50%;
+			filter: blur(0);
+			transition: filter .3s ease;
+		}
+		.pro-title {
+		    font-size: 30px;
+		    color: #ddd;
+		    margin: 50px 0 10px;
+		}
+		.pro-btn {
+		    color: #ddd;
+		    font-size: 15px;
+		    border: solid 1px #ddd;
+		    padding: 5px 10px;
+		    border-radius: 3px;
+		    &:hover {
+		    	color: #111;
+		    	background-color: #ddd;
+		    }
+		}
+		&:hover {
+    		transform: scale(1.1);		
+			transition: all .3s ease;
+			.pro-cover {
+				z-index: -1;
+				filter: blur(5px) brightness(0.5);
+			}
+		}
+	}
+}
+

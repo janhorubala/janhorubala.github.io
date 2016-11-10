@@ -86,6 +86,9 @@ exclude:
 
 
 collections:
+  projects:
+    output: true
+    permalink: /:title/
   songs:
     output: true
     permalink: /songs/:title/

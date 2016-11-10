@@ -66,5 +66,5 @@ Choć drogę miał niełatwą
 
 Stalowa linka pękła  
 Krótka chwila strachu  
-Bolesny moment zwiątpienia  
+Bolesny moment zwątpienia  
 I następny do piachu  
