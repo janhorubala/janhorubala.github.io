@@ -8,14 +8,14 @@ permalink: /resume/
 ## Education
 
 #### Computer Science at [MIMUW](http://www.mimuw.edu.pl/){:target="_blank"} within [MISMaP](http://en.mismap.uw.edu.pl/){:target="_blank"} [2013 - 2016]
-As a licentiate thesis I created with my team [BeerIt](https://beerit.co){:target="_blank"} - mobile application (Android/iOS) for recognition beers based on a photo of label. Theoretical work is availble here [Machine learning algorithms for image recognition in application for beer lovers](../assets/files/thesis_infromatics.pdf){:target="_blank"}.
+As a licentiate thesis I created with my team [BeerIt](https://beerit.co){:target="_blank"} - mobile application (Android/iOS) for recognition beers based on a photo of label. Theoretical work is availble here [Machine learning algorithms for image recognition in application for beer lovers]({{ site.url }}/assets/files/thesis_informatics.pdf){:target="_blank"}.
 
 #### Psychology at [WP](http://psych.strony.uw.edu.pl/){:target="_blank"} within [MISMaP](http://en.mismap.uw.edu.pl/){:target="_blank"} [2012 - 2016]
 I studied psychology in 2012 - 2016 years, but it’s bored me and I quit it before master degree. But I made some notes and presentation, maybe someone come in handy.
 
 #### Philosophy at [WFiS](http://www.wfis.uw.edu.pl/){:target="_blank"} at [UW](http://www.uw.edu.pl/){:target="_blank"} [2010 - 2013]
-I did my licentiate thesis [The structural sin concept in the context of the Kant's radical evil idea](assets/files/thesis_philosophy.pdf){:target="_blank"} under the supervision of Prof. Andrzej Miś.
-My notes and presentations are available [here](assets/files/thesis_philosophy.pdf){:target="_blank"}.
+I did my licentiate thesis [The structural sin concept in the context of the Kant's radical evil idea]({{ site.url }}/assets/files/thesis_philosophy.pdf){:target="_blank"} under the supervision of Prof. Andrzej Miś.
+My notes and presentations are available [here]({{ site.url }}/assets/files/thesis_philosophy.pdf){:target="_blank"}.
 
 
 ## My projects
