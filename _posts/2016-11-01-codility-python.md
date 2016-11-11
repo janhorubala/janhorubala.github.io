@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Codility
+title: Codility Python
 ---
 
-Here I published some solutions for codility lessons in python. Sometimes there are few correct solutions, I tried to include them too!
+Algorythms from codility lessons writed in Python.
 
+{% gist 5555251 %}
 
 ### Lesson 1
 ```python

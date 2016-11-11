@@ -11,16 +11,13 @@ layout: default
 <br>
 <br>
 <div class="song-hr"></div>
+
+{% if content %}
+  <h2>Setlist</h2>
   <div class="entry">
     {{ content }}
   </div>
-
-  <div class="author">
-    {{ page.text }}
-  </div>
-
-  {% include disqus.html %}
-
+{% endif %}
 <!--
   <div class="author">
     Music - {{ page.music }}

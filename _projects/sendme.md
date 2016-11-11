@@ -14,4 +14,4 @@ That's why I decided to create a simple server that would fetch photos from soci
 
 I chose React Native to write apps for Android, but I have several troubles due to the implementation. RN hasn’t got components for Alarm Manager and Background Workers. So I had to implement it on my own, I even open sourced these modules, you can check it out on my Github. Another problem was with sending emails, RN hasn’t got an email client, so I decided (for now) to use REST API provided by Gmail. I know it’s not ideal, but for my grandma it’s enough.
 
-And last problem, more human related. To fetch other photos from Facebook and Instagram you need permission and all siblings boycotted the idea of sending my grandma all of their photos. I’m thinking about adding some filter by tags or something, but for now my grandma convinced everybody to approve the app.
+And last problem, more human related. To fetch other photos from Facebook and Instagram you need permission and my siblings boycotted the idea of sending grandma all of their photos. I’m thinking about adding some filter by tags or something, but for now my grandma convinced everybody to approve the app.

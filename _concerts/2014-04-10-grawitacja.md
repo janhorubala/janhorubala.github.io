@@ -4,8 +4,6 @@ title: Grawitacja
 video: http://www.youtube.com/embed/wIEWGA66cGE?color=white&theme=light
 ---
 
-#### Setlist
-
 Baza  
 Autobus  
 Intro  
