@@ -18,15 +18,11 @@ def solution(A):
 
 #### 1. OddOccurrencesInArray
 
-```python
-def solution(A):
-    tmp = 0
-    for a in A:
-        tmp ^= a
-    return tmp
-```
+<script src="https://gist.github.com/jonzee/1563ce7c610c9d035c749549b3edcda9.js"></script>
 
 #### 2. CyclicRotation
+
+{% gist 1563ce7c610c9d035c749549b3edcda9 %}
 
 <!--
 ```python

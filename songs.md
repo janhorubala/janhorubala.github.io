@@ -15,7 +15,7 @@ permalink: /songs/
 
 <h2>Concerts</h2>
 <div class="posts">
-  {% for post in site.concerts %}
+  {% for post in site.concerts reversed %}
       <a class="song-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} - {{ post.date | date: "%B %e, %Y" }}</a>
   {% endfor %}
 </div>
