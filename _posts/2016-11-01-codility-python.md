@@ -121,6 +121,8 @@ def solution(A, K):
     git='326791cae44e77cfa093cf1ca08acfb7'
 %}
 
+<!--
+
 ### 6. Sorting
 
 
@@ -378,4 +380,6 @@ solution(24) == 8
 
 
 12 - 8 inch - poprzeczka 30 - 20 cm 
+
+-->
 
