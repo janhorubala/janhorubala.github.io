@@ -1,0 +1,9 @@
+<div class="code-frame">
+	<input id="{{ include.git }}" type="checkbox" class="code-input">
+	<label class="code-label" for="{{ include.git }}">
+		<a href="{{ include.url }}" target="_blank">{{ include.url | split: '/' | last | replace: '_', ' ' | capitalize_all }}</a>
+	</label>
+	<div class="code-snippet">
+		{% gist include.git %}
+	</div>
+</div>

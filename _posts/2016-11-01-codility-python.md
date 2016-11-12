@@ -1,28 +1,28 @@
 ---
 layout: post
 title: Codility Python
+comments: true
 ---
 
-Algorythms from codility lessons writed in Python.
+Here are my 100% solutions for Codility Lessons written in Python. Solutions are hidden (so you have few seconds to make sure that you don't want to solve task by yourself) Titles are links to description on Codility Platform. Enjoy and if you have remarks or alternative solutions - share in comments!
 
-{% gist 5555251 %}
+### 1. Iterations
 
-### Lesson 1
-```python
-def solution(A):
+### 2. Arrays
 
-```
+{%
+    include codility.html
+    num=1
+    url='https://codility.com/programmers/lessons/2-arrays/cyclic_rotation/'
+    git='e68526c034bd1fa5371949fe9abfa61d'
+%}
 
-
-### Lesson 2 - Arrays
-
-#### 1. OddOccurrencesInArray
-
-<script src="https://gist.github.com/jonzee/1563ce7c610c9d035c749549b3edcda9.js"></script>
-
-#### 2. CyclicRotation
-
-{% gist 1563ce7c610c9d035c749549b3edcda9 %}
+{%
+    include codility.html
+    num=2
+    url='https://codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/'
+    git='1563ce7c610c9d035c749549b3edcda9'
+%}
 
 <!--
 ```python
@@ -46,205 +46,84 @@ def solution(A, K):
     return A
 ```
 -->
-```python
-def reverse(A, i, j):
-    while i < j:
-        A[i], A[j], i, j = A[j], A[i], i+1, j-1
-        
-def solution(A, K):
-    l = len(A)
-    K = K % l
-    if l == 0 || K == 0:
-        return A
 
-    reverse(A, 0, l - K - 1)
-    reverse(A, l - K, l - 1)
-    reverse(A, 0, l - 1)
+### 3. Time Complexity
 
-```
-### Lesson 3 - Time Complexity
+{%
+    include codility.html
+    url='https://codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/'
+    git='e7c838862e6e09b0473ed5a105571dac'
+%}
 
-#### 1. [TapeEquilibrium](https://codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/)
+{%
+    include codility.html
+    url='https://codility.com/programmers/lessons/3-time_complexity/frog_jmp/'
+    git='1d1ea33dae7d967e409e21a95bdb6dc3'
+%}
 
-```python
-def solution(A):
-    B = list(A)
-    l = len(A)
-    for i in range(1, l):
-        A[i] += A[i-1]
-        B[l-i-1] += B[l-i]
-    m = 100000000
-    for i in range(0, l - 1):
-        m = min(m, abs(A[i] - B[i+1]))
-    return m
-```
+{%
+    include codility.html
+    url='https://codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/'
+    git='6b6166d044a1a807d07f67988b0267cd'
+%}
 
-#### 2. [FrogJmp](https://codility.com/programmers/lessons/3-time_complexity/frog_jmp/)
-```python
-def solution(X, Y, D):
-    if (Y - X) % D != 0:
-        return 1 + ((Y - X)) // D
-    else:
-        return ((Y - X)) // D
-```
+### 4. Counting Elements
 
-#### 3. [PermMissingElem](https://codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/)
-```python
-def solution(A):
-    tmp = 0
-    l = len(A)
-    for i in range(0, l):
-        tmp = tmp ^ A[i] ^ (i+1)
-    return tmp ^ l+1
-```
+{%
+    include codility.html
+    url='https://codility.com/programmers/lessons/4-counting_elements/perm_check/'
+    git='734981f1c916a1e5263fef3a0cb3e643'
+%}
+
+{%
+    include codility.html
+    url='https://codility.com/programmers/lessons/4-counting_elements/frog_river_one/'
+    git='c58ef6c61adeba70b79b76abf88bb2d5'
+%}
+
+{%
+    include codility.html
+    url='https://codility.com/programmers/lessons/4-counting_elements/missing_integer/'
+    git='e939479277b82e85d29cf50ea686ef05'
+%}
 
 
-### Lessons 4 - Counting Elements
-
-#### 1. [PermCheck](https://codility.com/programmers/lessons/4-counting_elements/perm_check/)
-```python
-def solution(A):
-    l = len(A)
-    B = [0] * l
-    for a in A:
-        if a <= l:
-            B[a-1] += 1
-    for b in B:
-        if b != 1:
-            return 0
-    return 1
-```
-
-#### 2. [FrogRiverOne](https://codility.com/programmers/lessons/4-counting_elements/frog_river_one/)
-```python
-def solution(X, A):
-    l = len(A)
-    if X > l:
-        return -1
-    B = [0] * (X+1)
-    all = 0
-    for i in range(0, l):
-        if B[A[i]] == 0:
-            B[A[i]] += 1
-            all += 1
-        if all == X:
-            return i
-    return -1
-```
-
-#### 3. [MissingInteger](https://codility.com/programmers/lessons/4-counting_elements/missing_integer/)
-```python
-def solution(A):
-    l = len(A)
-    B = [0] * (l + 1)
-    for a in A:
-        if a > 0 and a < l+1:
-            B[a-1] += 1
-    for i in range(0, l+1):
-        if B[i] == 0:
-            return i
-```
-#### 4. [MaxCounters](https://codility.com/programmers/lessons/4-counting_elements/max_counters/)
-```python
-def solution(N, A):
-    C = [0] * N
-    pre_max = 0
-    acc_max = 0
-    for a in A:
-        if a == N+1:
-            acc_max = pre_max
-        else:
-            if C[a-1] < acc_max:
-                C[a-1] = acc_max + 1
-            else:
-                C[a-1] += 1
-            pre_max = max(pre_max, C[a-1])
-    for i in range(0, len(C)):
-        C[i] = max(acc_max, C[i])
-    return C
-```
-### Lessons 5 - Prefix Sums
-
-#### 1. [PassingCars](https://codility.com/programmers/lessons/5-prefix_sums/passing_cars/)
-```python
-def solution(A):
-    est = 0
-    res = 0
-    for a in A:
-        if a == 0:
-            est += 1
-        else:
-            res += est
-        if res > 1000000000:
-            return -1
-    return res
+{%
+    include codility.html
+    url='https://codility.com/programmers/lessons/4-counting_elements/max_counters/'
+    git='46a0a2e754d16a0f59ca0c311dcfcb16'
+%}
 
 
-```
-#### 2. [CountDiv](https://codility.com/programmers/lessons/5-prefix_sums/count_div/)
-```python
-def solution(A, B, K):
-    return (B - A + 1) // K
-```
+### 5. Prefix Sums
 
-#### 3. [MinAvgTwoSlice](https://codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/)
-```python
-def solution(A):
-    l = len(A)
-    minimum = 100000
-    result = 0
-    for i in range(0, l):
-        if i + 1 < l:
-            tmp = (A[i] + A[i+1]) / 2.
-            if tmp < minimum:
-                minimum, result = tmp, i 
-        if i + 2 < l:
-            tmp = (A[i] + A[i+1] + A[i+2]) / 3.
-            if tmp < minimum:
-                minimum, result = tmp, i 
-    return result
-```
-### 4. [GenomicRangeQuery](https://codility.com/programmers/lessons/5-prefix_sums/genomic_range_query/)
-```python
-def solution(S, P, Q):
-    l = len(S)
-    D = [[0 for x in range(l)] for y in range(4)]
-    A = 100001
-    C = 100001
-    G = 100001
-    T = 100001
-    for i in range(l-1, -1, -1):
-        if S[i] == 'A':
-            A = i
-        if S[i] == 'C':
-            C = i
-        if S[i] == 'G':
-            G = i
-        if S[i] == 'T':
-            T = i
-        D[0][i] = A
-        D[1][i] = C
-        D[2][i] = G
-        D[3][i] = T
-    r = len(P)
-    W = [0] * r
-    for i in range(0, r):
-        if D[0][P[i]] <= Q[i]:
-            W[i] = 1
-            continue
-        if D[1][P[i]] <= Q[i]:
-            W[i] = 2
-            continue
-        if D[2][P[i]] <= Q[i]:
-            W[i] = 3
-            continue
-        if D[3][P[i]] <= Q[i]:
-            W[i] = 4
-    return W
+{%
+    include codility.html
+    url='https://codility.com/programmers/lessons/5-prefix_sums/passing_cars/'
+    git='e4e14aa909eecefcfca5df6b821e15e8'
+%}
 
-solution('CAGCCTA', [2, 5, 0], [4, 5, 6])
-```
-### Lessons 6 - Sorting
+{%
+    include codility.html
+    url='https://codility.com/programmers/lessons/5-prefix_sums/count_div/'
+    git='88ac7d17e3dcce00177e94c758b2a7c4'
+%}
+
+{%
+    include codility.html
+    url='https://codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/'
+    git='bd2b6dcde43b4620be670d17412b9c1e'
+%}
+
+{%
+    include codility.html
+    url='https://codility.com/programmers/lessons/5-prefix_sums/genomic_range_query/'
+    git='326791cae44e77cfa093cf1ca08acfb7'
+%}
+
+### 6. Sorting
+
+
 #### 1. [MaxProductOfThree](https://codility.com/programmers/lessons/6-sorting/max_product_of_three/)
 ```python
 def solution(A):
@@ -459,7 +338,7 @@ def solution(A):
 solution([23171, 21011, 21123, 21366, 21013, 21367])
 ```
 
-### 10. Lesson - 
+### 10. Prime and composite numbers
 
 #### 1. []()
 ```python
@@ -479,3 +358,24 @@ solution(24) == 8
 ``` python
 
 #### 2. []()
+
+
+#### 3. [Flags](https://codility.com/programmers/lessons/10-prime_and_composite_numbers/flags/)
+<script src="https://gist.github.com/jonzee/29974e17ada2d07574e5c949d3353e78.js"></script>
+
+#### 4. [Peaks](https://codility.com/programmers/lessons/10-prime_and_composite_numbers/peaks/)
+
+### 11. Siece of Eratostenes
+### 12. Euclidean algorithm
+### 13. Fibonacci numbers
+### 14. Binary search algorithm
+### 15. Caterpillar method
+### 16. Greedy algorithms
+### 17. Dynamic programming
+### 90. Tasks from Indeed Prime 2015 challenge
+### 91. Tasks from Indeed Prime 2016 College Coders challenge
+### 99. Future training
+
+
+12 - 8 inch - poprzeczka 30 - 20 cm 
+

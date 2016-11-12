@@ -95,3 +95,50 @@
   max-height: 0;
   transition: all 0.15s ease-out;
 }
+
+.code-snippet {
+  display: block;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.15s ease-out;
+}
+
+
+.code-frame {
+    margin-bottom: 10px;
+    .code-label {
+        display: block;
+        border: 1px solid #dededc;
+        padding: 10px 10px 10px 30px;
+        cursor: pointer;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            bottom: 10px;
+            left: 10px;
+            width: 3px;
+            background-color: #dededc;
+            transition: background-color 0.15s ease-out;
+        }
+        &:hover:before {
+            background-color: #57ad68;
+            transition: background-color 0.15s ease-out;
+        }
+    }
+}
+
+.code-input {
+    display: none;
+    &:checked + .code-label {
+        margin-bottom: -1px;
+        &::before {
+            background-color: #57ad68 !important;
+        }
+    }
+    &:checked ~ .code-snippet {
+        max-height: 1000px;
+        transition: all 0.15s ease-out;
+    }
+}
