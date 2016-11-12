@@ -1,7 +1,9 @@
+{% assign words = include.url | split: '/' | last | split '_' %}
+{% capture title %}{% for word in words %}{{ word | capitalize }}{% endfor %}{% endcapture %}
 <div class="code-frame">
 	<input id="{{ include.git }}" type="checkbox" class="code-input">
 	<label class="code-label" for="{{ include.git }}">
-		<a href="{{ include.url }}" target="_blank">{{ include.url | split: '/' | last | replace: '_', ' ' | capitalize_all }}</a>
+		<a href="{{ include.url }}" target="_blank">{{ title }}</a>
 	</label>
 	<div class="code-snippet">
 		{% gist include.git %}
