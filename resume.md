@@ -4,6 +4,7 @@ title: Résumé
 permalink: /resume/
 ---
 
+I'm a web and mobile developer most experienced in frontend development and React Native, now moving toward backend and Python. I'm looking for opportunities to explore new programming approaches, software engineering techniques and startup/entrepreneurs methodologies.
 
 ## Education
 
@@ -14,7 +15,7 @@ As a licentiate thesis I created with my team [BeerIt](https://beerit.co){:targe
 I studied psychology in 2012 - 2016 years, but it’s bored me and I quit it before master degree. But I made some notes and presentation, maybe someone come in handy.
 
 #### Philosophy at [WFiS](http://www.wfis.uw.edu.pl/){:target="_blank"} at [UW](http://www.uw.edu.pl/){:target="_blank"} [2010 - 2013]
-I did my licentiate thesis [The structural sin concept in the context of the Kant's radical evil idea]({{ site.baseurl }}/assets/files/thesis_philosophy.pdf){:target="_blank"} under the supervision of Prof. Andrzej Miś.
+I wrote my licentiate thesis [The structural sin concept in the context of the Kant's radical evil idea]({{ site.baseurl }}/assets/files/thesis_philosophy.pdf){:target="_blank"} under the supervision of Prof. Andrzej Miś.
 My notes and presentations are available [here]({{ site.baseurl }}/assets/files/thesis_philosophy.pdf){:target="_blank"}.
 
 
@@ -135,8 +136,6 @@ I recorded EP with my rock band Aleafonic in Narocz Studio. But there is one thi
 #### Machine Learning on coursera
 
 #### Studium filozoficzno-teologiczne
-
-#### 
 
 
 
