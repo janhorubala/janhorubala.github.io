@@ -12,14 +12,12 @@ Here are my 100% solutions for Codility Lessons written in Python. Solutions are
 
 {%
     include codility.html
-    num=1
     url='https://codility.com/programmers/lessons/2-arrays/cyclic_rotation/'
     git='e68526c034bd1fa5371949fe9abfa61d'
 %}
 
 {%
     include codility.html
-    num=2
     url='https://codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/'
     git='1563ce7c610c9d035c749549b3edcda9'
 %}
