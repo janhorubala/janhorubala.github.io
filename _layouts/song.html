@@ -13,10 +13,12 @@ layout: default
     {{ page.text }}
   </div>
 
-  {% include disqus.html %}
 
 {% if page.video %}
-	<div class="video">
+  <div class="video">
     {% include youtube.html video=page.video %}
-	</div>
+  </div>
  {% endif %}
+
+
+{% include disqus.html %}

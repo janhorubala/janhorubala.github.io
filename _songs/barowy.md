@@ -34,6 +34,8 @@ Bądź czujny i gdy przyjdzie pora, zabierz mnie wtedy stąd
 
 Jeśli chcesz... 
 
+<div class="song-hr"></div>
+
 Jeśli chcesz wtedy ze mną spotkać się  
 To do baru wpadnij, zapal, ze mną napij się  
 Co to jest, pewnie powiesz, że przecież to niewiele  

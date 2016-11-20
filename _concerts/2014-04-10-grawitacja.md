@@ -10,7 +10,7 @@ Intro
 Barykady  
 Trójkowy Stary  
 Trójkowy Nowy  
-Slowly groove  
+Slowly Groove  
 11/16  
 Improwizacja  
 Barowy  

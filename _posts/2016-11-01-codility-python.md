@@ -119,6 +119,14 @@ def solution(A, K):
     git='326791cae44e77cfa093cf1ca08acfb7'
 %}
 
+### 10. Prime and composite numbers
+
+{%
+    include codility.html
+    url='https://codility.com/programmers/lessons/10-prime_and_composite_numbers/peaks/'
+    git='20f47851996d7fc4ad6e22ca48ef7b6b'
+%}
+
 <!--
 
 ### 6. Sorting
