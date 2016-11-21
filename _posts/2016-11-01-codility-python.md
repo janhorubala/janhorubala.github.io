@@ -127,6 +127,37 @@ def solution(A, K):
     git='20f47851996d7fc4ad6e22ca48ef7b6b'
 %}
 
+
+### 11. Sieve of Eratosthenes
+
+{%
+    include codility.html
+    url='https://codility.com/programmers/lessons/11-sieve_of_eratosthenes/count_semiprimes/'
+    git='db218558951bc17cc079b033e5af08ac'
+%}
+
+{%
+    include codility.html
+    url='https://codility.com/programmers/lessons/11-sieve_of_eratosthenes/count_non_divisible/'
+    git='841637b38f9501c9ef8fdc2d08517810'
+%}
+
+### 12. Euclidean algorithm
+
+{%
+    include codility.html
+    url='https://codility.com/programmers/lessons/12-euclidean_algorithm/chocolates_by_numbers/'
+    git='19f0e3f0671ee2e2070f45d874df873c'
+%}
+
+{%
+    include codility.html
+    url='https://codility.com/programmers/lessons/12-euclidean_algorithm/common_prime_divisors/'
+    git='98bd9dc2fd459aa5dd54b829389a22c0'
+%}
+
+### 13. 
+
 <!--
 
 ### 6. Sorting
