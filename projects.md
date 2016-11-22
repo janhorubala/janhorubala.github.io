@@ -5,7 +5,7 @@ layout: default
 # My Projects
 
 <div class="projects">
-  {% for post in site.projects %}
+  {% for post in site.projects reversed %}
    	<div class="pro-tab">
 	   	<div class="pro-cover" style="background-image: url({{ site.baseurl }}{{ post.cover }})">
 	   	</div>

@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Songs
-permalink: /songs/
+title: Music
+permalink: /music/
 ---
 
 <div class="posts">
-  {% for post in site.songs %}
+  {% for post in site.music %}
       <a class="song-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} {%if post.text %} - {{post.text}} {% endif %}</a>
   {% endfor %}
 </div>

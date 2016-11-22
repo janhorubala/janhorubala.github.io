@@ -12,6 +12,10 @@
 	padding: 2em 0;
 }
 
+.date-right {
+    float: right;
+}
+
 .video {
     border-top: 1px solid #eee;
     padding-top: 2em;
@@ -112,6 +116,9 @@
         padding: 10px 10px 10px 20px;
         cursor: pointer;
         position: relative;
+        .code-title {
+            text-transform: capitalize;
+        }
         &::before {
             content: '';
             position: absolute;
@@ -122,12 +129,15 @@
             background-color: #dededc;
             transition: background-color 0.15s ease-out;
         }
-        &:hover:before {
-            background-color: #57ad68;
-            transition: background-color 0.15s ease-out;
+        &:hover {
+            &::before {
+                background-color: #57ad68;
+                transition: background-color 0.15s ease-out;
+            }
         }
     }
 }
+
 
 .code-input {
     display: none;

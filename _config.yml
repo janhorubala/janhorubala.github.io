@@ -90,9 +90,9 @@ collections:
   projects:
     output: true
     permalink: /:title/
-  songs:
+  music:
     output: true
-    permalink: /songs/:title/
+    permalink: /music/:title/
   concerts:
     output: true
   motocykl:
