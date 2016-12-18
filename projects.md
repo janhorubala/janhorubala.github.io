@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# My Projects
+# Projects
 
 <div class="projects">
   {% for post in site.projects reversed %}

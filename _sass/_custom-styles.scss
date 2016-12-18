@@ -7,6 +7,27 @@
     font-size: 14px !important;
 }
 
+.grey {
+    color: #666;    
+}
+
+.res-role {
+    font-weight: bold;
+    white-space: nowrap;
+}
+.res-date {
+    float: right;
+    font-weight: bold;
+}
+.res-place {
+    display: block;
+    color: #333;
+    &:hover {
+        color: #4183C4;
+    }
+}
+
+
 .author {
 	color: #666;
 	padding: 2em 0;
