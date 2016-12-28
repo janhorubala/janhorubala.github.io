@@ -4,12 +4,96 @@ title: Résumé
 permalink: /resume/
 ---
 
-I'm a web and mobile developer most experienced in frontend development and React Native, now moving toward backend and Python. I'm looking for opportunities to explore new programming approaches, software engineering techniques and startup/entrepreneurs methodologies.
+<!-- 
+CV nie musi mieć jednej strony, teraz chyba jest trochę nieczytelne (za dużo tekstu)
 
-## Experience
+Moje preferencje:
 
-#### Web Developer at [DaftCode](http://daftcode.com/){:target="_blank"} <span class="date-right">03/2016 - 07/2016</span>
+0. Na początku dane, wiadomo, imię nazwisko te sprawy
+1. Cele, które chcesz osiągnąć
+2. Umiejętności
+3. Doświadczenie
+4. Osiągnięcia, nagrody itd
+5. Zainteresowania
+6. Edukacja (dobry fundament)
+
+Możesz też ewentualnie na LinkedIn podpatrzeć na dobre profile, tam są praktycznie CV budowane.
+
+tak wygląda moje CV na Toptal: https://www.toptal.com/resume/michal-mikolajczyk
+
+Dawaj znać, jak podejmiesz kolejne krotki. 
+-->
+
+I’m a web and mobile developer most experienced in frontend and React Native, now moving toward backend and Python. I’m looking for opportunities to explore new programming approaches, software engineering techniques and startup methodologies.
+
+### Experience
+HTML, CSS, 		<span class="grey">5 years</span>   
+JavaScript, 	<span class="grey">3 years</span>   
+ES6, 			<span class="grey">2 years</span>   
+React.js, 		<span class="grey">2 years</span>   
+React Native, 	<span class="grey">1 year</span>   
+Redux, 			<span class="grey">1 year</span>   
+Python, 		<span class="grey">1 year</span>   
+
+<hr>
+<span class="res-role">
+	iOS Developer
+</span>
+<span class="res-date">
+	08/2016 - present
+</span>
+<a href="http://jonzee.me/sendme/" target="_blank" class="res-place">
+	SendMe
+</a>
+
+- Usage Facebook API for authorization, fetching profiles, friends and photos.   
+- Usage Instagram API for authorization, fetching profiles, friends and photos.   
+- Usage Gmail API for authorization, fetching data and sending emails (via REST API).   
+- Implemented ListView with pagination for Facebook and Instagram friends list.   
+- Implemented background tasks with React Native.   
+- Implemented Camera module with sending photos via Gmail.   
+
+Technologies: React Native, Redux, Xcode, Facebook SDK, Google SDK, WebView
+
+<hr>
+<span class="res-role">
+	Product Owner and iOS Developer
+</span>
+<span class="res-date">
+	10/2015 - present
+</span>
+<a href="http://beerit.co/" target="_blank" class="res-place">
+	BeerIt
+</a>
+
+- Created iOS app in Swift 2, from the ground up.   
+- Implemented third-party authorization with Google+ and Facebook.   
+- Reimplemented application in React Native from scratch.   
+- Went through submit process (including description, screenshots, keywords etc. for iTunes).  
+- Implemented camera module with sending photos to backend.   
+
+Technologies: Swift 2, Xcode, React Native, Realm 
+
+<hr>
+<span class="res-role">
+	Web Developer
+</span>
+<span class="res-date">
+	03/2016 - 07/2016
+</span>
+<a href="http://daftcode.com/" target="_blank" class="res-place">
+	DaftCode
+</a>
+- Created user accounts with token-based authentication on frontend and backend.   
+- Implemented, within Pair Programming, tests for user accounts in Django.   
+- Created form with validation and system for resetting password.   
+- Implemented complex user dashboard for analytics with chart, datepicker and selectors for displaying data.   
+
+Technologies: Backbone.js, Handlebars.js, Chart.js, Kalendae
+
+
 I developed a bitcoin-based web application using Backbone.js, Handlebars and Django. I was responsible for creating user accounts with complex dashboard (Chart.js, Kalendae) and frontend-render optimization.
+Technologies: Backbone.js, Handlebars.js, Django, Python,
 
 #### Co-founder at [MixTube](https://mixtube.co/){:target="_blank"} <span class="date-right">07/2015 - 10/2015</span>
 I created with my friends a web application for collaborative party playlist. We won the pre-seed investment in the contest for the [best startup idea](http://mamstartup.pl/konkurs/7183/studenci-uw-wygrali-50-tysiecy-zlotych-na-realizacje-swojego-startupu){:target="_blank"}. We were invited to WebSummit in Dublin to Alpha Program. Technologies used: Python, Tornado, React, WebSockets.
