@@ -1,5 +1,10 @@
 @import "projects";
 
+hr {
+    border-width: 0 !important;
+    border-bottom: 1px solid #eee !important;
+}
+
 .highlight {
 	-moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
@@ -25,7 +30,17 @@
     &:hover {
         color: #4183C4;
     }
+    &:before {
+        content: 'at ';
+    }
 }
+// .res-stack {
+//     margin-left: 15;
+//     &:before {
+//         content: 'Stack:';
+//         font-weight: bold;
+//     }
+// }
 
 
 .author {
