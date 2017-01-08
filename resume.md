@@ -61,12 +61,12 @@ BeerIt
 - Accomplished submitting process in App Store, prepared screenshots, description, keywords and all other required informations.
 - Designed and implemented an iOS application in Swift 2.
 - Built from the ground up an iOS application in React Native.
-- Implemented look and feel of an iOS application in React Native for different devices.
+- Implemented look and feel of an iOS application in React Native for different devices (iPhone 5 to 7).
 - Implemented third-party authorization with Facebook and Google+ SDK.
 - Implemented camera module with sending photos to backend.
 - Created functional tests with Appium for React Native application.
 
-Technologies: Xcode, Swift 2, CoreData, Alamofire, JavaScript, React Native, Realm, Appium, Facebook SDK, Google SDK, Scrum, JIRA</span>
+Technologies: Xcode, Swift 2, CoreData, Alamofire, JavaScript, React Native, Realm, Appium, Facebook SDK, Google SDK, Scrum, JIRA
 
 <hr>
 <span class="res-role">
@@ -276,8 +276,8 @@ Bachelor in Computer Science
 <span class="res-date">
 10/2013 - 09/2016
 </span>
-<a href="http://www.mismap.uw.edu.pl/" target="_blank" class="res-place">
-MIM within MISMaP
+<a href="http://www.uw.edu.pl/" target="_blank" class="res-place">
+University of Warsaw
 </a>
 
 - Defended bachelor group-thesis “Machine learning algorithms for image recognition in application for beer lovers” under the supervision of Michał Możdżonek, grade 5/5.
@@ -292,12 +292,11 @@ Psychology
 <span class="res-date">
 10/2012 - 06/2016
 </span>
-<a href="http://www.mismap.uw.edu.pl/" target="_blank" class="res-place">
-WP within MISMaP
+<a href="http://www.uw.edu.pl/" target="_blank" class="res-place">
+University of Warsaw
 </a>
 
 - Created set of Mind Maps based on course “Biological mechanisms of behaviour” and James Kalat textbook “Biological Psychology”.
-- Participated in medical-focused course “Abnormal psychology” with dr. Paweł Holas, created comprehensive script for students.
 - Participated in Student Scientific Association “Moderator” engaged in the PR, marketing and business.
 - Created web application for evaluation standardized psychological tests like APIS-Z or NEO-FFI.
 - Prepared many presentations about history of psychology, disorders of perception and popular experiments in psychology.
@@ -309,8 +308,8 @@ Bachelor in Philosophy
 <span class="res-date">
 10/2010 - 09/2013
 </span>
-<a href="http://wfis.uw.edu.pl/" target="_blank" class="res-place">
-WFiS at UW
+<a href="http://www.uw.edu.pl/" target="_blank" class="res-place">
+University of Warsaw
 </a>
 
 - Defended bachelor thesis “The structural sin concept in the context of the Kant’s radical evil idea” under the supervision of Prof. Andrzej Miś, grade 5/5.
