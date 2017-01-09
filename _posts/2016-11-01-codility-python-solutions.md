@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Codility Python
+title: Codility Python Solutions
 comments: true
 ---
 

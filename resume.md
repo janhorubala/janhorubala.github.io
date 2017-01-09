@@ -4,7 +4,7 @@ title: Résumé
 permalink: /resume/
 ---
 
-I am a web and mobile developer mostly experienced in frontend and React Native, now moving towards backend and devops. I am looking for opportunities to explore new programming approaches, software engineering techniques and startup/entrepreneurs methodologies.
+I am a web and mobile developer mostly experienced in frontend and React Native, now moving towards backend and DevOps. I am looking for opportunities to explore new programming approaches, software engineering techniques and startup methodologies.
 
 <hr>
 
@@ -19,7 +19,7 @@ Python, 		<span class="grey">1 year</span>
 # Experience
 
 <span class="res-role">
-iOS Developer
+iOS & Android Developer
 </span>
 <span class="res-date">
 08/2016 - present
@@ -40,7 +40,7 @@ SendMe
 - Implemented Jest Unit Tests for Redux Reducers.
 - Maintained tasks priorities using Trello - kanban board.
 
-Technologies: JavaScript, React Native, Redux, Jest, Facebook SDK, Google SDK, WebView, Xcode, Android, Java, Trello.
+Technologies: JavaScript, React Native, Redux, Jest, Facebook SDK, Google SDK, WebView, Xcode, Android Studio, Java, Trello.
 
 <hr>
 <span class="res-role">
@@ -80,7 +80,7 @@ DaftCode
 </a>
 
 - Created token-based authentication on frontend and backend.
-- Implemented, within a Pair Programming, user accounts in Django covered with tests.
+- Implemented, within a Pair Programming, user accounts covered with tests in Django.
 - Created form with validation and system for resetting password.
 - Implemented complex user dashboard for analytics with chart, datepicker and selectors for visualization the data.
 - Improved Grunt configuration for faster recompiling, running server, etc.
