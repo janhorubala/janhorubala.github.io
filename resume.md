@@ -1,10 +1,14 @@
 ---
 layout: page
-title: Résumé
+title:
 permalink: /resume/
 ---
 
-I am a web and mobile developer mostly experienced in frontend and React Native, now moving towards backend and DevOps. I am looking for opportunities to explore new programming approaches, software engineering techniques and startup methodologies.
+<div style="position: relative;">
+<h1 id="rsum">Résumé</h1>
+<a style="position: absolute; right: 0; bottom: 0; line-height: 1.7" target="_blank" href="{{ site.url }}/assets/files/resume.pdf">extract</a>
+</div>
+I am a web and mobile developer mostly experienced in frontend and React Native, now moving toward backend and DevOps. I am looking for opportunities to explore new programming approaches, software engineering techniques and startup methodologies.
 
 <hr>
 
@@ -156,7 +160,7 @@ Technologies: HTML5, CSS3, Bootstrap, SASS, Compass, Photoshop, JavaScript, jQue
 Software Engineer
 </span>
 <span class="res-date">
-07/2014 - 09/2014
+01/2014 - 02/2016
 </span>
 <a href="http://jonzee.me/projects/" target="_blank" class="res-place">
 Freelance
@@ -201,7 +205,7 @@ PostgreSQL, Realm.
 Reaktor X
 </span>
 <span class="res-date">
-01/2017 - 05/2017
+01/2017 - present
 </span>
 <a href="http://reaktorx.com/" target="_blank" class="res-place">
 Warsaw Reaktor
@@ -270,6 +274,19 @@ Awarded for organizing largest scout camp in district, main theme of the camp wa
 
 # Education
 
+<span class="res-role">
+Master in Computer Science
+</span>
+<span class="res-date">
+10/2016 - present
+</span>
+<a href="http://www.uw.edu.pl/" target="_blank" class="res-place">
+University of Warsaw
+</a>
+
+- Specialization: "Innovative application of computer science".
+
+<hr>
 <span class="res-role">
 Bachelor in Computer Science
 </span>

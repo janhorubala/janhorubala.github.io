@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+This is my personal website where I publish some of my works, code snippets and experiments with HTML/CSS/JavaScript code. From time to time I publish article about programming, learning and lifehacks. These articles are usually summaries of my researches and contain practical knowladge I used everyday. Feel free to adapt it.
 
-### More Information
+### Table of contents 
 
-A place to include any other types of information that you'd like to include about yourself.
+- Redux vs React Philosophies - 3 main differences between Redux and React
+- Redux Step by Step - list of tutorials and materials about redux
+- Jekyll, Github, Markdown - how to create website like this one
+- Out-of-date Email Provider - how to backup and remove your old email client
+- <a href="">Language Lerning Strategy</a> - 5 steps to leap for next language level
+- <a href="">Codility Python Solutions</a> - solutions for codility lessons in python
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+I used some images from <a href="https://clipartfest.com/">clipartfest.com</a>.   
+Website created with a <a href="https://github.com/barryclark/jekyll-now">barryclark</a> jekyll theme.
