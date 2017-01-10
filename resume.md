@@ -8,6 +8,7 @@ permalink: /resume/
 <h1 id="rsum">Résumé</h1>
 <a style="position: absolute; right: 0; bottom: 0; line-height: 1.7" target="_blank" href="{{ site.url }}/assets/files/resume.pdf">extract</a>
 </div>
+
 I am a web and mobile developer mostly experienced in frontend and React Native, now moving toward backend and DevOps. I am looking for opportunities to explore new programming approaches, software engineering techniques and startup methodologies.
 
 <hr>
