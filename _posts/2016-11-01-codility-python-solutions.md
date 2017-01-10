@@ -4,7 +4,7 @@ title: Codility Python Solutions
 comments: true
 ---
 
-Here are my 100% solutions for Codility Lessons written in Python. Solutions are hidden (so you have few seconds to make sure that you don't want to solve task by yourself) Titles are links to description on Codility Platform. Enjoy and if you have remarks or alternative solutions - share in comments!
+Here are my 100% solutions for Codility Lessons written in Python. Solutions are hidden (so you have few seconds to make sure that you don't want to solve task by yourself;) Enjoy and if you have remarks or alternative solutions - share in comments!
 
 ### 1. Iterations
 

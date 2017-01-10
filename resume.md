@@ -3,11 +3,8 @@ layout: page
 title: Résumé
 permalink: /resume/
 ---
-<!-- 
-<div style="position: relative;">
-<a style="position: absolute; right: 0; bottom: 0; line-height: 1.7" target="_blank" href="{{ site.url }}/assets/files/resume.pdf">extract</a>
-</div>
- -->
+<a target="_blank" href="{{ site.url }}/assets/files/resume.pdf">Short version</a>
+
 I am a web and mobile developer mostly experienced in frontend and React Native, now moving toward backend and DevOps. I am looking for opportunities to explore new programming approaches, software engineering techniques and startup methodologies.
 
 <hr>
@@ -70,7 +67,7 @@ BeerIt
 - Implemented camera module with sending photos to backend.
 - Created functional tests with Appium for React Native application.
 
-Technologies: Xcode, Swift 2, CoreData, Alamofire, JavaScript, React Native, Realm, Appium, Facebook SDK, Google SDK, Scrum, JIRA
+Technologies: Xcode, Swift 2, CoreData, Alamofire, JavaScript, React Native, Realm, Appium, Facebook SDK, Google SDK, Scrum, JIRA.
 
 <hr>
 <span class="res-role">
