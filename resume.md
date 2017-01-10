@@ -5,7 +5,7 @@ permalink: /resume/
 ---
 
 <div style="position: relative;">
-<h1 id="rsum">Résumé</h1>
+# Résumé
 <a style="position: absolute; right: 0; bottom: 0; line-height: 1.7" target="_blank" href="{{ site.url }}/assets/files/resume.pdf">extract</a>
 </div>
 
