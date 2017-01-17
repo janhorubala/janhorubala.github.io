@@ -93,8 +93,8 @@ body {
 /* Like & dislike badge images */
 #tinderslide .like,
 #tinderslide .dislike {
-    background: url("http://blogs.sonymobile.com/pl/files/2015/04/Sony_AK1-39e800fc6eccbde67df8b6d970a021da-605x403.jpg") no-repeat scroll center center;
-    background-size: cover;
+    background: url("../img/adamek.jpg") no-repeat scroll center center;
+    background-size: contain;
     opacity: 0;
     height: 80px;
     position: absolute;
@@ -116,7 +116,7 @@ body {
 #tinderslide .dislike {
     left: 45px;
     right: auto;
-    background: url("http://img13.deviantart.net/2777/i/2016/260/e/5/logo__14___the_deviantart_logo_by_octss-dahwy98.png") no-repeat scroll center center;
+    background: url("https://lh3.googleusercontent.com/-709zP3p85yw/AAAAAAAAAAI/AAAAAAABog8/7CvYWUtZvoE/s0-c-k-no-ns/photo.jpg") no-repeat scroll center center;
     background-size: contain;
 }
 
@@ -160,13 +160,13 @@ body {
 }
 
 i.btn-dislike {
-    background: url("http://img13.deviantart.net/2777/i/2016/260/e/5/logo__14___the_deviantart_logo_by_octss-dahwy98.png") no-repeat scroll center center;
+    background: url("https://lh3.googleusercontent.com/-709zP3p85yw/AAAAAAAAAAI/AAAAAAABog8/7CvYWUtZvoE/s0-c-k-no-ns/photo.jpg") no-repeat scroll center center;
     background-size: contain;
 }
 
 i.btn-like {
-    background: url("http://blogs.sonymobile.com/pl/files/2015/04/Sony_AK1-39e800fc6eccbde67df8b6d970a021da-605x403.jpg") no-repeat scroll center center;
-    background-size: cover;
+    background: url("../img/adamek.jpg") no-repeat scroll center center;
+    background-size: contain;
 }
 
 .actions a {

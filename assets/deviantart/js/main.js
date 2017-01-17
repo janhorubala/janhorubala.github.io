@@ -1,127 +1,44 @@
----
-layout: clean
----
-
-<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/deviant/deviantART-gallery.min.css"/>
-<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/deviant/css/jTinder.css">
-<style>
-    .spinner {
-      width: 40px;
-      height: 40px;
-
-      position: absolute;
-      left: calc(50% - 20px);
-        top: calc(50% - 20px);
-      margin: 0;
-    }
-
-    .double-bounce1, .double-bounce2 {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      background-color: #333;
-      opacity: 0.6;
-      position: absolute;
-      top: 0;
-      left: 0;
-      
-      -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-      animation: sk-bounce 2.0s infinite ease-in-out;
-    }
-
-    .double-bounce2 {
-      -webkit-animation-delay: -1.0s;
-      animation-delay: -1.0s;
-    }
-
-    @-webkit-keyframes sk-bounce {
-      0%, 100% { -webkit-transform: scale(0.0) }
-      50% { -webkit-transform: scale(1.0) }
-    }
-
-    @keyframes sk-bounce {
-      0%, 100% { 
-        transform: scale(0.0);
-        -webkit-transform: scale(0.0);
-      } 50% { 
-        transform: scale(1.0);
-        -webkit-transform: scale(1.0);
-      }
-    }
-</style>
-<div style="max-width: 600px; min-width: 320px; margin: auto">
-    <!-- start padding container -->
-    <div id="progress"></div>
-
-    <div class="wrap">
-        <!-- start jtinder container -->
-        <div id="tinderslide">
-            <ul id="gallery">
-                <div class="spinner">
-                  <div class="double-bounce1"></div>
-                  <div class="double-bounce2"></div>
-                </div>
-            </ul>
-        </div>
-        <!-- end jtinder container -->
-    </div>
-    <!-- end padding container -->
-
-    <!-- jTinder trigger by buttons  -->
-    <div class="actions">
-        <a href="#" class="dislike"><i class="btn-dislike"></i></a>
-        <a href="#" class="like"><i class="btn-like"></i></a>
-    </div>
-
-    <!-- jQuery lib -->
-<script type="text/javascript" src="{{ site.url }}/assets/deviant/js/jquery.min.js"></script>
-<!-- transform2d lib -->
-<script type="text/javascript" src="{{ site.url }}/assets/deviant/js/jquery.transform2d.js"></script>
-<!-- jTinder lib -->
-<script type="text/javascript" src="{{ site.url }}/assets/deviant/js/jquery.jTinder.js"></script>
-<!-- jTinder initialization script -->
-<script type="text/javascript" src="{{ site.url }}/assets/deviant/ProgressBar.js"></script>
-
-
-<script type="text/javascript" src="{{ site.url }}/assets/deviant/deviantART-gallery-plugin.js"></script>
-
-<script type="text/javascript">
-    function photos(url, id, ratio) {
+function photos(url, id, ratio) {
     return new Promise((res, rej) => {
 
       // thanks http://stackoverflow.com/a/7369516/1696757
       var s = document.createElement('script');
-      s.src = "http://query.yahooapis.com/v1/public/yql?q=" + escape('select * from xml where url="' + url + '"') + "&_maxage=86400&format=json&callback=callback";
+      s.src = "http://query.yahooapis.com/v1/public/yql?q=" + encodeURIComponent('select * from xml where url="' + url + '"') + "&_maxage=86400&format=json&callback=callback";
       document.body.appendChild(s);
       
       window['callback'] = callback;
       function callback(feed) {
-          var deviations = [];
-          console.log(url, feed);
-          var items = feed.query.results.rss.channel.item;
+        var deviations = [];
+        var items = feed.query.results.rss.channel.item;
 
-          for(var i = 0, l = items.length; i < l; i++) {
-              var object = {};
+        for(var i = 0, l = items.length; i < l; i++) {
+            var object = {};
 
-              object.title = items[i].title[0];
-              object.image = items[i].content.url;
+            object.title = items[i].title[0];
+            // object.image = items[i].content.url;
+            object.image = (items[i].thumbnail && typeof items[i].thumbnail === 'object' && items[i].thumbnail[1])
+              ? items[i].thumbnail[1].url 
+              : items[i].content.url
 
-              deviations.push(object);
-          }
-          res(deviations)
+            deviations.push(object);
+        }
+        res(deviations)
       }
 
     })
 }
 
 var url1 = 'http://backend.deviantart.com/rss.xml?type=deviation&q=by:6artificial6';
-var url2 = 'http://backend.deviantart.com/rss.xml?type=deviation&q=boost:popular/in:photography';
+// var url2 = 'http://backend.deviantart.com/rss.xml?type=deviation&q=boost:popular/in:photography';
+var url2 = 'http://backend.deviantart.com/rss.xml?q=in:photography+sort:time';
+
 photos(url1)
 .then(photo1 => {
   photos(url2)
   .then(photo2 => {
     const u1 = shuffle(photo1);
     const u2 = shuffle(photo2);
+    const krzysztof = 'http://blogs.sonymobile.com/pl/files/2015/04/Sony_AK1-39e800fc6eccbde67df8b6d970a021da-605x403.jpg';
     const image = (img, numb) => (`<li class="${numb}">` + 
 	    `<div class="img" style="background: url('${img}') no-repeat scroll center center; background-size: contain"></div>` + 
 	    `<div class="dislike"></div>` + 
@@ -129,7 +46,7 @@ photos(url1)
     	`</li>`)
 
     var len = u1.length + u2.length < 50 ? u1.length + u2.length : 50;
-    var result = '';
+    var result = image(krzysztof, 'last') + image(krzysztof, 'last');
     for (let i = 0; i < len; i++) {
       const numb = Math.floor(Math.random() * 2) + 1
       if (numb === 1) {
@@ -147,23 +64,29 @@ photos(url1)
       }
     }
 
-window.onload = function onLoad() {
-    $('#gallery').html(result);
-    runTinder();
-}
-   })
+    window.onload = function onLoad() {
+      $('#gallery').html(result);
+      runTinder();
+    }
+
+  })
 })
 
 window['counter_good'] = 0;
 window['counter_bad'] = 0;
 
+function gameOver() {
+  let score = Math.floor(counter_good / (counter_bad + counter_good) * 100)
+  alert(`Game Over, your score: ${score} %, click to play again!`);
+  window.location.href = window.location.pathname + window.location.search + window.location.hash;
+}
+
 function runTinder() {
   $("#tinderslide").jTinder({
     // dislike callback
       onDislike: function (item) {
-        // set the status text
-  		console.log('should be 2: ')
-        console.log(item.attr('class'));
+        if (item.attr('class') == 'last') { gameOver() }
+
         if (item.attr('class') == 2) {
         	counter_good += 1
         } else {
@@ -175,8 +98,8 @@ function runTinder() {
       },
     // like callback
       onLike: function (item) {
-      	console.log('should be 1: ')
-        console.log(item.attr('class'));
+        if (item.attr('class') == 'last') { gameOver() }
+
         if (item.attr('class') == 1) {
         	counter_good += 1
         } else {
@@ -238,7 +161,6 @@ bar.text.style.fontSize = '18px';
 bar.text.style.right = '20px';
 bar.animate(0);  // Number from 0.0 to 1.0
 
-
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -257,5 +179,3 @@ function shuffle(array) {
 
   return array;
 }
-</script>
-</div>
