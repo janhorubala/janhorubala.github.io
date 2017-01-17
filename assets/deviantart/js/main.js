@@ -12,15 +12,17 @@ function photos(url, id, ratio) {
         var items = feed.query.results.rss.channel.item;
 
         for(var i = 0, l = items.length; i < l; i++) {
-            var object = {};
+          if (items[i].content.url &&
+            (items[i].content.url.slice(-3) === 'jpg' || items[i].content.url.slice(-3) === 'png')) {
 
+            var object = {};
             object.title = items[i].title[0];
             // object.image = items[i].content.url;
             object.image = (items[i].thumbnail && typeof items[i].thumbnail === 'object' && items[i].thumbnail[1])
               ? items[i].thumbnail[1].url 
               : items[i].content.url
-
             deviations.push(object);
+          }
         }
         res(deviations)
       }
