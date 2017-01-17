@@ -147,10 +147,11 @@ photos(url1)
       }
     }
 
+window.onload = function onLoad() {
     $('#gallery').html(result);
-
     runTinder();
-  })
+}
+   })
 })
 
 window['counter_good'] = 0;
@@ -201,7 +202,6 @@ function runTinder() {
   });
 }
 
-window.onload = function onLoad() {
 window['bar'] = new ProgressBar.Line('#progress', {
   strokeWidth: 4,
   easing: 'easeInOut',
@@ -233,11 +233,10 @@ window['bar'] = new ProgressBar.Line('#progress', {
   }
 });
 
-	bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-	bar.text.style.fontSize = '18px';
-	bar.text.style.right = '20px';
-	bar.animate(0);  // Number from 0.0 to 1.0
-};
+bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+bar.text.style.fontSize = '18px';
+bar.text.style.right = '20px';
+bar.animate(0);  // Number from 0.0 to 1.0
 
 
 function shuffle(array) {
