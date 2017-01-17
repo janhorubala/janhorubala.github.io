@@ -14,10 +14,12 @@
 
 #tinderslide .like {
     background: url("http://blogs.sonymobile.com/pl/files/2015/04/Sony_AK1-39e800fc6eccbde67df8b6d970a021da-605x403.jpg") no-repeat scroll center center;
+    background-size: cover;
 }
 
 #tinderslide .dislike {
     background: url("http://img13.deviantart.net/2777/i/2016/260/e/5/logo__14___the_deviantart_logo_by_octss-dahwy98.png") no-repeat scroll center center;
+    background-size: contain;
 }
 
 i.btn-dislike {
