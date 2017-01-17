@@ -77,7 +77,7 @@ window['counter_bad'] = 0;
 
 function gameOver() {
   let score = Math.floor(counter_good / (counter_bad + counter_good) * 100)
-  alert(`Game Over, your score: ${score} %, click to play again!`);
+  alert(`Game Over, your score: ${score} %!\nClick to play again!`);
   window.location.href = window.location.pathname + window.location.search + window.location.hash;
 }
 
