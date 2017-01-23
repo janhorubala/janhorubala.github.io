@@ -1,6 +1,3 @@
-// https://www.deviantart.com/developers/rss
-// http://help.deviantart.com/335/
-
 window['left'] = window.location.hash === '' ? '' : window.location.hash.split('!')[0].split('#')[1];
 window['right'] = window.location.hash === '' ? '6artificial6' : window.location.hash.split('!')[1];
 
