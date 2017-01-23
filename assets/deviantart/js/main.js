@@ -1,3 +1,5 @@
+// https://www.deviantart.com/developers/rss
+// http://help.deviantart.com/335/
 
 window['left'] = window.location.hash === '' ? '' : window.location.hash.split('!')[0].split('#')[1];
 window['right'] = window.location.hash === '' ? '6artificial6' : window.location.hash.split('!')[1];
@@ -128,6 +130,7 @@ function runGame() {
 function gameOver() {
   let score = Math.floor(counter_good / (counter_bad + counter_good) * 100)
   alert(`Game Over, your score: ${score}%!\nClick to play again!`);
+  bar.animate(0);
   resetGame()
   runGame()
 }

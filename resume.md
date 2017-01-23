@@ -50,7 +50,7 @@ iOS Developer and Product Owner
 <span class="res-date">
 10/2015 - 1/2017
 </span>
-<a href="http://beerit.co/" target="_blank" class="res-place">
+<a href="https://itunes.apple.com/us/app/beerit/id1165812733" target="_blank" class="res-place">
 BeerIt
 </a>
 
