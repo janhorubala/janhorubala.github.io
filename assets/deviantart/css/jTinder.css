@@ -93,9 +93,9 @@ body {
 /* Like & dislike badge images */
 #tinderslide .like,
 #tinderslide .dislike {
-    background: url("../img/adamek.jpg") no-repeat scroll center center;
+/*    background: url("../img/adamek.jpg") no-repeat scroll center center;
     background-size: contain;
-    opacity: 0;
+*/    opacity: 0;
     height: 80px;
     position: absolute;
     width: 80px;
@@ -116,9 +116,9 @@ body {
 #tinderslide .dislike {
     left: 45px;
     right: auto;
-    background: url("https://lh3.googleusercontent.com/-709zP3p85yw/AAAAAAAAAAI/AAAAAAABog8/7CvYWUtZvoE/s0-c-k-no-ns/photo.jpg") no-repeat scroll center center;
+/*    background: url("https://lh3.googleusercontent.com/-709zP3p85yw/AAAAAAAAAAI/AAAAAAABog8/7CvYWUtZvoE/s0-c-k-no-ns/photo.jpg") no-repeat scroll center center;
     background-size: contain;
-}
+*/}
 
 /* Image container */
 #tinderslide .img {
@@ -160,14 +160,14 @@ body {
 }
 
 i.btn-dislike {
-    background: url("https://lh3.googleusercontent.com/-709zP3p85yw/AAAAAAAAAAI/AAAAAAABog8/7CvYWUtZvoE/s0-c-k-no-ns/photo.jpg") no-repeat scroll center center;
+/*    background: url("https://lh3.googleusercontent.com/-709zP3p85yw/AAAAAAAAAAI/AAAAAAABog8/7CvYWUtZvoE/s0-c-k-no-ns/photo.jpg") no-repeat scroll center center;
     background-size: contain;
-}
+*/}
 
 i.btn-like {
-    background: url("../img/adamek.jpg") no-repeat scroll center center;
+/*    background: url("../img/adamek.jpg") no-repeat scroll center center;
     background-size: contain;
-}
+*/}
 
 .actions a {
     float: left;

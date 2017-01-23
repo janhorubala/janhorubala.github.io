@@ -1,93 +1,141 @@
-function photos(url, id, ratio) {
-    return new Promise((res, rej) => {
 
-      // thanks http://stackoverflow.com/a/7369516/1696757
-      var s = document.createElement('script');
-      s.src = "http://query.yahooapis.com/v1/public/yql?q=" + encodeURIComponent('select * from xml where url="' + url + '"') + "&_maxage=86400&format=json&callback=callback";
-      document.body.appendChild(s);
-      
-      window['callback'] = callback;
-      function callback(feed) {
-        var deviations = [];
-        var items = feed.query.results.rss.channel.item;
+window['left'] = window.location.hash === '' ? '' : window.location.hash.split('!')[0].split('#')[1];
+window['right'] = window.location.hash === '' ? '6artificial6' : window.location.hash.split('!')[1];
 
-        for(var i = 0, l = items.length; i < l; i++) {
-          if (items[i].content.url &&
-            (items[i].content.url.slice(-3) === 'jpg' || items[i].content.url.slice(-3) === 'png')) {
+resetGame()
 
-            var object = {};
-            object.title = items[i].title[0];
-            // object.image = items[i].content.url;
-            object.image = (items[i].thumbnail && typeof items[i].thumbnail === 'object' && items[i].thumbnail[1])
-              ? items[i].thumbnail[1].url 
-              : items[i].content.url
-            deviations.push(object);
-          }
-        }
-        res(deviations)
-      }
-
-    })
+function resetGame() {
+  $('#gallery').html('<div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>')
+  window['counter_good'] = 0;
+  window['counter_bad'] = 0;
 }
 
-var url1 = 'http://backend.deviantart.com/rss.xml?type=deviation&q=by:6artificial6';
-// var url2 = 'http://backend.deviantart.com/rss.xml?type=deviation&q=boost:popular/in:photography';
-var url2 = 'http://backend.deviantart.com/rss.xml?q=in:photography+sort:time';
+function changeUser(e) {
+  e.preventDefault();
+  var name = prompt("Enter nickname of deviant or leave empty to set random photos")
+  if (name === null) { return null }
+  resetGame();
+  if (e.target.className === 'btn-like') { window['right'] = name }
+  if (e.target.className === 'btn-dislike') { window['left'] = name }
+  window.location.hash = window['left'] + '!' + window['right'];
+  runGame();
+}
 
-photos(url1)
-.then(photo1 => {
-  photos(url2)
-  .then(photo2 => {
-    const u1 = shuffle(photo1);
-    const u2 = shuffle(photo2);
-    const krzysztof = 'http://blogs.sonymobile.com/pl/files/2015/04/Sony_AK1-39e800fc6eccbde67df8b6d970a021da-605x403.jpg';
-    const image = (img, numb) => (`<li class="${numb}">` + 
-	    `<div class="img" style="background: url('${img}') no-repeat scroll center center; background-size: contain"></div>` + 
-	    `<div class="dislike"></div>` + 
-	    `<div class="like"></div>` + 
-    	`</li>`)
+$('.actions .dislike').on('click', changeUser);
+$('.actions .like').on('click', changeUser);
 
-    var len = u1.length + u2.length < 50 ? u1.length + u2.length : 50;
-    var result = image(krzysztof, 'last') + image(krzysztof, 'last');
-    for (let i = 0; i < len; i++) {
-      const numb = Math.floor(Math.random() * 2) + 1
-      if (numb === 1) {
-        if (u1.length > 0) {
-          result += image(u1.pop().image, 1)
-        } else {
-          result += image(u2.pop().image, 2)
-        }
-      } else {
-        if (u2.length > 0) {
-          result += image(u2.pop().image, 2)
-        } else {
-          result += image(u1.pop().image, 1)
-        }        
+function photos(url) {
+  return new Promise((res, rej) => {
+    var s = document.createElement('script');
+    s.src = "http://query.yahooapis.com/v1/public/yql?q=" + encodeURIComponent('select * from xml where url="' + url + '"') + "&_maxage=86400&format=json&callback=callback";
+    document.body.appendChild(s);
+    window['callback'] = callback;
+    function callback(feed) {
+
+      if (typeof feed.query.results.rss.channel.item === 'undefined') {
+        alert(`User ${name} does not exist!`);
+        return rej('USER NOT EXISTS');
       }
-    }
 
-    window.onload = function onLoad() {
-      $('#gallery').html(result);
-      runTinder();
+      var deviations = [];
+      var items = feed.query.results.rss.channel.item;
+
+      for(var i = 0, l = items.length; i < l; i++) {
+        if (items[i].content.url &&
+          (items[i].content.url.slice(-3) === 'jpg' || items[i].content.url.slice(-3) === 'png')) {
+
+          var object = {};
+          object.title = items[i].title[0];
+          // object.image = items[i].content.url;
+          object.image = (items[i].thumbnail && typeof items[i].thumbnail === 'object' && items[i].thumbnail[1])
+            ? items[i].thumbnail[1].url 
+            : items[i].content.url
+          deviations.push(object);
+        }
+      }
+      res(deviations)
     }
 
   })
-})
+}
 
-window['counter_good'] = 0;
-window['counter_bad'] = 0;
+var userUrl = (user) =>
+  user !== ''
+  ? `http://backend.deviantart.com/rss.xml?type=deviation&q=by:${user}`
+  : 'http://backend.deviantart.com/rss.xml?sort:time'
+
+function runGame() {
+  var right = userUrl(window['right'])
+  var left = userUrl(window['left'])
+
+  photos(right)
+  .then(photo1 => {
+    photos(left)
+    .then(photo2 => {
+      const logo = 'http://img13.deviantart.net/2777/i/2016/260/e/5/logo__14___the_deviantart_logo_by_octss-dahwy98.png'
+      var rightP = window['right'] !== '' ? photo1.shift().image : logo;
+      var leftP = window['left'] !== '' ? photo2.shift().image : logo;
+
+      const u1 = shuffle(photo1);
+      const u2 = shuffle(photo2);
+      const krzysztof = rightP;
+      const image = (img, numb) => (`<li class="${numb}">` + 
+        `<div class="img" style="background: url('${img}') no-repeat scroll center center; background-size: contain"></div>` + 
+        `<div class="dislike"></div>` + 
+        `<div class="like"></div>` + 
+        `</li>`)
+
+      var len = u1.length + u2.length < 50 ? u1.length + u2.length : 50;
+      var result = image(krzysztof, 'last');
+      for (let i = 0; i < len; i++) {
+        const numb = Math.floor(Math.random() * 2) + 1
+        if (numb === 1) {
+          if (u1.length > 0) {
+            result += image(u1.pop().image, 1)
+          } else {
+            result += image(u2.pop().image, 2)
+          }
+        } else {
+          if (u2.length > 0) {
+            result += image(u2.pop().image, 2)
+          } else {
+            result += image(u1.pop().image, 1)
+          }        
+        }
+      }
+      $('.wrap').html(
+        '<div id="tinderslide">' +
+        '<ul id="gallery">' +
+        result + 
+        '</ul>' +
+        '</div>'
+        )
+      runTinder();
+      setPhoto(leftP, rightP);
+    })
+    .catch(err => {
+      window['left'] = '';
+      runGame();
+    })
+  })
+  .catch(err => {
+    window['right'] = '';
+    runGame();
+  })
+}
+
 
 function gameOver() {
   let score = Math.floor(counter_good / (counter_bad + counter_good) * 100)
   alert(`Game Over, your score: ${score} %!\nClick to play again!`);
-  window.location.href = window.location.pathname + window.location.search + window.location.hash;
+  resetGame()
+  runGame()
 }
 
 function runTinder() {
   $("#tinderslide").jTinder({
-    // dislike callback
       onDislike: function (item) {
-        if (item.attr('class') == 'last') { gameOver() }
+        if (item.attr('class') == 'last') { return gameOver() }
 
         if (item.attr('class') == 2) {
         	counter_good += 1
@@ -95,20 +143,15 @@ function runTinder() {
         	counter_bad += 1
         }
         bar.set(counter_good / (counter_good + counter_bad))
-
-          // $('#status').html('Dislike image ' + (item.index()+1));
       },
-    // like callback
       onLike: function (item) {
-        if (item.attr('class') == 'last') { gameOver() }
+        if (item.attr('class') == 'last') { return gameOver() }
 
         if (item.attr('class') == 1) {
         	counter_good += 1
         } else {
         	counter_bad += 1
         }
-        // set the status text
-          // $('#status').html('Like image ' + (item.index()+1));
         bar.set(counter_good / (counter_good + counter_bad))
       },
     animationRevertSpeed: 200,
@@ -116,14 +159,6 @@ function runTinder() {
     threshold: 1,
     likeSelector: '.like',
     dislikeSelector: '.dislike'
-  });
-
-  /**
-   * Set button action to trigger jTinder like & dislike.
-   */
-  $('.actions .like, .actions .dislike').click(function(e){
-    e.preventDefault();
-    $("#tinderslide").jTinder($(this).attr('class'));
   });
 }
 
@@ -181,3 +216,33 @@ function shuffle(array) {
 
   return array;
 }
+
+function setPhoto(left, right) {
+  const obj = (img) => ({
+    'background': `url("${img}") no-repeat scroll center center`,
+    'background-size': 'cover'    
+  })
+  $('#tinderslide .dislike').css(obj(left))
+  $('.actions .btn-dislike').css(obj(left))
+  $('#tinderslide .like').css(obj(right))
+  $('.actions .btn-like').css(obj(right));
+}
+
+$(document).keydown(function(e) {
+    switch(e.which) {
+        case 37: // left
+          $("#tinderslide").jTinder('dislike');
+          break;
+        // case 38: // up
+        // break;
+        case 39: // right
+          $("#tinderslide").jTinder('like');
+          break;
+        // case 40: // down
+        // break;
+        default: return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+});
+
+runGame()
