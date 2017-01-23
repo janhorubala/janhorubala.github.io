@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 4HP: DeviantArt Tinder Game
+title: 4HP DeviantArt Game
 comments: true
 ---
 
