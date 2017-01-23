@@ -127,7 +127,7 @@ function runGame() {
 
 function gameOver() {
   let score = Math.floor(counter_good / (counter_bad + counter_good) * 100)
-  alert(`Game Over, your score: ${score} %!\nClick to play again!`);
+  alert(`Game Over, your score: ${score}%!\nClick to play again!`);
   resetGame()
   runGame()
 }
