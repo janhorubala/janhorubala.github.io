@@ -32,7 +32,7 @@ function photos(url) {
     function callback(feed) {
 
       if (typeof feed.query.results.rss.channel.item === 'undefined') {
-        alert(`User ${name} does not exist!`);
+        alert(`User does not exist! Selected random photos.`);
         return rej('USER NOT EXISTS');
       }
 

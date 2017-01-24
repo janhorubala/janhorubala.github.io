@@ -20,12 +20,12 @@ Python, 		<span class="grey">1 year</span>
 # Experience
 
 <span class="res-role">
-iOS & Android Developer
+iOS and Android Developer
 </span>
 <span class="res-date">
 08/2016 - present
 </span>
-<a href="http://jonzee.me/sendme/" target="_blank" class="res-place">
+<a href="{{ site.url }}/sendme/" target="_blank" class="res-place">
 SendMe
 </a>
 
@@ -159,7 +159,7 @@ Software Engineer
 <span class="res-date">
 01/2014 - 02/2016
 </span>
-<a href="http://jonzee.me/projects/" target="_blank" class="res-place">
+<a href="{{ site.url }}/projects/" target="_blank" class="res-place">
 Freelance
 </a>
 
