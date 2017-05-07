@@ -4,7 +4,7 @@ title: Portugal, Vagueira
 comments: true
 ---
 
-![mixtube_main]({{ site.url }}/assets/images/travels/portugal.jpg)
+![Portugal, Vagueira]({{ site.url }}/assets/images/travels/portugal.jpg)
 
 ### TL;DR
 Plan: surfing/enduro  
