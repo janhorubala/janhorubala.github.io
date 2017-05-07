@@ -4,7 +4,7 @@ title: Portugal, Vagueira
 comments: true
 ---
 
-![Portugal, Vagueira]({{ site.url }}/assets/images/travels/portugal.jpg)
+![Portugal, Vagueira]({{ site.url }}/assets/images/travels/portugal.JPG)
 
 ### TL;DR
 Plan: surfing/enduro  
