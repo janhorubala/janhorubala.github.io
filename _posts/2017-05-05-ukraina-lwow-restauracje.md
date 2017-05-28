@@ -64,7 +64,7 @@ Trzypiętrowy browar na rogu rynku, mają dobrą kuchnię i piwo. Byłem pierwsz
 
 #### Masoch Cafe
 
-Gdy przed wyjazdem pytałem ukrańców, co warto zobaczyć, to wszyscy na pierwszym miejscu mówili o **Masoch Cafe**, mimo że niektórzy przyznawali że nawet tam nie byli. Leopold von Sacher-Masoch był astriackim pisarzem, który w książce *Wenus w futrze* opisał półroczny eksperyment, w którym był niewolnikiem baronówny Fanny von Pistor (stąd termin - masochizm). Przed pubem stoi metalowa rzeźba Masocha, przy której [biczuje się](https://youtu.be/qbKUSqCLUL8), ku uciesze przechodniów, klientów pubu. Wpadłem tylko na drinka (duży wybór i wprawni barmani), w tym czasie kilka osób zostało "ukaranych" przez kelnerkę, choć z yt wynika że cały program obejmuje polewanie roztopionym woskiem, masaż kostkami lodu itd.
+Gdy przed wyjazdem pytałem ukraińców, co warto zobaczyć, to wszyscy na pierwszym miejscu mówili o **Masoch Cafe**, mimo że niektórzy przyznawali że nawet tam nie byli. Leopold von Sacher-Masoch był austriackim pisarzem, który w książce *Wenus w futrze* opisał półroczny eksperyment, w którym był niewolnikiem baronówny Fanny von Pistor (stąd termin - masochizm). Przed pubem stoi metalowa rzeźba Masocha, przy której [biczuje się](https://youtu.be/qbKUSqCLUL8), ku uciesze przechodniów, klientów pubu. Wpadłem tylko na drinka (duży wybór i wprawni barmani), w tym czasie kilka osób zostało "ukaranych" przez kelnerkę, choć z yt wynika że cały program obejmuje polewanie roztopionym woskiem, masaż kostkami lodu itd.
 
 #### Pijana Wiśnia
 
@@ -74,14 +74,12 @@ Lekka nalewka z owocami wiśni jaką można kupić na rynku i w okolicach **Domu
 
 #### Szkocka
 
-Koniecznie! Jedyne miejsce którego nie ma na mapie *Just Lviv It*, a które na prawdę warto odwiedzić. Słynna restauracja, gdzie spotykała się lwowska szkoła matematyczna tak naprawdę była w innym miejscu, teraz została przeniesiona i połączona z hotelem. Wszyscy klienci których spotkaliśmy, byli bardziej lub mniej związani z matematyką (studenci, wykładowcy, ludzie znający pośrednio Mazura czy Kuratowskiego). Po sali krążyła replika *Księgi Szkockiej* - niewielki zeszyt podarowany przez żonę Banacha, w którym zapisywano problemy, rozwiązania i nagrody za rozwiązanie zadań matematycznych. Można również obejrzeć *Mechanikę* Stefana Banacha i współczesną *Księgę Szkocką*, gdzie od 2012 roku ludzie zapisują problemy i nagrody i zostawiają kontakt do siebie (często maile w domenie .edu). Specjalnością zakładu (tak jak i kiedyś) jest gęś pieczona w winie, najlepsza we Lwowie. Ceny mniej więcej o połowę wyższe niż w pozostałych knajpach lwowskich, lekko snobistyczna atmosfera (jedna pani była oburzona, że większość klientów restauracji nie wie co to [Całka Lebesgue’a](https://en.wikipedia.org/wiki/Lebesgue_integration))
+Koniecznie! Jedyne miejsce którego nie ma na mapie *Just Lviv It*, a które naprawdę warto odwiedzić. Słynna restauracja, gdzie spotykała się lwowska szkoła matematyczna tak naprawdę była w innym miejscu, teraz została przeniesiona i połączona z hotelem. Wszyscy klienci których spotkaliśmy, byli bardziej lub mniej związani z matematyką (studenci, wykładowcy, ludzie znający pośrednio Mazura czy Kuratowskiego). Po sali krążyła replika *Księgi Szkockiej* - niewielki zeszyt podarowany przez żonę Banacha, w którym zapisywano problemy, rozwiązania i nagrody za rozwiązanie zadań matematycznych. Można również obejrzeć *Mechanikę* Stefana Banacha i współczesną *Księgę Szkocką*, gdzie od 2012 roku ludzie zapisują problemy i nagrody i zostawiają kontakt do siebie (często maile w domenie .edu). Specjalnością zakładu (tak jak i kiedyś) jest gęś pieczona w winie, najlepsza we Lwowie. Ceny mniej więcej o połowę wyższe niż w pozostałych knajpach lwowskich, lekko snobistyczna atmosfera (jedna pani była oburzona, że większość klientów restauracji nie wie co to [Całka Lebesgue’a](https://en.wikipedia.org/wiki/Lebesgue_integration))
 
 #### Kumpel
 
-Restauracja która powinienna stać w Warszawie zamiast Szwejka. Klimatyczne miejsce, gdzie prawie cały czas leci polska muzyka z lat 20 i 30. Stylizowana na trochę elegancki, warszawski pub, coś między 20-leciem międzywojennym, a *Złym* Tyrmanda. Można wypić bardzo dużo dobrego piwa, zjeść do tego świetne przystawki i podziwiać świetnie urządzone wnętrze (na miejscu są wielkie kadzie w których waży się piwo).
+Restauracja która powinna stać w Warszawie zamiast Szwejka. Klimatyczne miejsce, gdzie prawie cały czas leci polska muzyka z lat 20 i 30. Stylizowana na trochę elegancki, warszawski pub, coś między 20-leciem międzywojennym, a *Złym* Tyrmanda. Można wypić bardzo dużo dobrego piwa, zjeść do tego świetne przystawki i podziwiać świetnie urządzone wnętrze (na miejscu są wielkie kadzie w których warzy się piwo).
 
 #### Dzyga
 
 Zmęczony całym tym turystycznym zgiełkiem, szukając czegoś bardziej autentycznego, trafiłem na jam session polsko-ukraińskiej grupy jazzowej w pubie *Dzyga*. Jedzenie takie sobie, piwo może być, ale program artystyczny, dla kogoś kto chce trochę bardziej wejść w miasto, bardzo ciekawy.
-
-
