@@ -6,15 +6,15 @@ comments: true
 
 4HP (4 Hour Project) is a series of simple tasks implemented in about 4 hours. The main reason is to learn something new, try hot technology or make small research and pickup the best framework/lib.
 
-<a href="{{ site.url }}/deviantart/" target="_blank">DEMO</a>
+<a href="{{ site.url }}/deviantart-game" target="_blank">DEMO</a>
 
 ### Instructions
 On mobile you swipe photos to left or right, on desktop use arrows (left/right) to swipe. Click on profile picture to change user with nickname.
 
 ### Foundation
-Last week I had a small argument with my brother. We talked about photography business. My brother claimed that his friends is one of the best photographer and his photos are just amazing. I was trying to find out what makes his friend outstanding.   
+Last week I had a small argument with my brother. We talked about photography business. My brother claimed that his friends is one of the best photographer and his photos are just amazing. I was trying to find out what makes his friend outstanding.
 
-We couldn’t get any conclusions, so I decided to create simple game that will show if there is some difference between random photos and photos taken by his friend. I used his photos from DeviantArt, mixed them with random photos and displayed them in tinder-like gallery: you decide who’s the author by swiping photo.   
+We couldn’t get any conclusions, so I decided to create simple game that will show if there is some difference between random photos and photos taken by his friend. I used his photos from DeviantArt, mixed them with random photos and displayed them in tinder-like gallery: you decide who’s the author by swiping photo.
 
 My brother couldn’t get a 100% score so I assume that I won. After all I added ability to provide other deviants and play in one versus other game (for example to check if you can recognize a unique style of your favorite photographer).
 
