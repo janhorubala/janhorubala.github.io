@@ -9,21 +9,51 @@ I am a web and mobile developer mostly experienced in frontend and React Native,
 
 <hr>
 
-HTML, CSS, 		<span class="grey">5 years</span>   
-JavaScript, 	<span class="grey">3 years</span>   
-ES6, 			<span class="grey">2 years</span>   
-React.js, 		<span class="grey">2 years</span>   
-React Native, 	<span class="grey">1 year</span>   
-Redux, 			<span class="grey">1 year</span>   
-Python, 		<span class="grey">1 year</span>   
+HTML, CSS,        <span class="grey">5 years</span><br />
+JavaScript,       <span class="grey">3 years</span><br />
+ES6,              <span class="grey">2 years</span><br />
+React.js, 		    <span class="grey">2 years</span><br />
+React Native,     <span class="grey">1 year</span><br />
+Redux,            <span class="grey">1 year</span><br />
+Python,           <span class="grey">1 year</span><br />
 
 # Experience
 
 <span class="res-role">
+Full Stack Developer
+</span>
+<span class="res-date">
+02/2017 - 08/2017
+</span>
+<a href="https://www.vikinggarage.com/" target="_blank" class="res-place">
+Viking Garage
+</a>
+
+<a href="https://github.com/michalmikolajczyk/viking-garage-frontend" target="_blank">Frontend</a>
+- Configured Webpack for React and Express projects and different environments.
+- Implemented from scratch React app with renting and reservation system.
+- Implemented Server Side Rendering with fetching data from external API.
+- Wrote unit tests for React components with Mocha, Enzyme and Sinon.
+- Created testing and deployment flow with npm scripts.
+- Worked fully remotely with two hangout session per week.
+
+<a href="https://github.com/michalmikolajczyk/viking-garage-api" target="_blank">Backend</a>
+- Projected and builded database with Postgres and Sequelize.
+- Wrote scripts for testing, building database and configuring environment.
+- Generated documentation from Typescript with Swagger UI.
+- Created authentication with JSON Web Token.
+- Implemented emails system with nodemailer.
+- Wrote unit tests for API routes with Mocha and Chai.
+
+FE Technologies: TypeScript, React, Webpack, Mocha, Enzyme, Sketch, Material Design.
+BE Technologies: TypeScript, Node.js, Express, Postgres, Swagger UI, Heroku, Travis CI.
+
+<hr>
+<span class="res-role">
 iOS and Android Developer
 </span>
 <span class="res-date">
-08/2016 - present
+08/2016 - 02/2017
 </span>
 <a href="{{ site.url }}/sendme/" target="_blank" class="res-place">
 SendMe
@@ -172,37 +202,49 @@ Technologies: Java, Android Studio, C++, VBA.
 
 # Technologies
 
-<strong>Languages</strong>   
+<strong>Languages</strong><br />
 HTML5, JSX, CSS3, SASS, JavaScript, ES6, TypeScript, Bash, Python, Java, C/C++.
 
-<strong>Libraries</strong>   
+<strong>Libraries</strong><br />
 React.js, React Native (iOS & Android), Backbone.js, Marionette.js, Moment.js, Chart.js, Lodash.js, Underscore.js, jQuery with plugins.
 
-<strong>APIs</strong>   
+<strong>APIs</strong><br />
 Facebook API, Instagram API, Gmail API, Youtube API.
 
-<strong>Frameworks</strong>   
+<strong>Frameworks</strong><br />
 Bootstrap, Flux, Redux, Django.
 
-<strong>Tools</strong>   
+<strong>Tools</strong><br />
 Git, Github, GitLab, Bitbucket, Grunt, npm, Webpack, pip, Sublime Text 3, Vim, Ansible Playbooks, JIRA, Chrome Developer Tools, Android Studio, Xcode.
 
-<strong>Paradigms</strong>   
-Scrum, Lean Startup, TDD, Pair Programming, Functional Programming (JavaScript, Haskell), Object-Oriented Programming (Java), REST, Unit Testing, Asynchronous Programming (JavaScript), Continous Integration.
+<strong>Paradigms</strong><br />
+Scrum, Lean Startup, TDD, Pair Programming, Functional Programming (JavaScript, Haskell), Object-Oriented Programming (Java), REST, Unit Testing, Asynchronous Programming (JavaScript), Continuous Integration.
 
-<strong>Platforms</strong>   
+<strong>Platforms</strong><br />
 Linux, Mac OS, Raspberry PI.
 
-<strong>Storage</strong>   
+<strong>Storage</strong><br />
 PostgreSQL, Realm.
 
 # Achievements
 
 <span class="res-role">
+Startup School
+</span>
+<span class="res-date">
+01/2017 - 04/2017
+</span>
+<a href="https://www.startupschool.org/" target="_blank" class="res-place">
+Y Combinator
+</a>
+Classified to pre-accelerator for young entrepreneurs and programmers. Programs took 4 month and included marketing and business talks, mentoring, creating MVP and meetings with investors.
+
+
+<span class="res-role">
 Reaktor X
 </span>
 <span class="res-date">
-01/2017 - present
+01/2017 - 04/2017
 </span>
 <a href="http://reaktorx.com/" target="_blank" class="res-place">
 Warsaw Reaktor
