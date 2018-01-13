@@ -1,0 +1,165 @@
+<html>
+<head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- ****** faviconit.com favicons ****** -->
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="{{ site.baseurl }}/assets/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="{{ site.baseurl }}/assets/favicon/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="{{ site.baseurl }}/assets/favicon/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ site.baseurl }}/assets/favicon/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="{{ site.baseurl }}/assets/favicon/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/favicon/favicon-16.png">
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/favicon/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}/assets/favicon/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}/assets/favicon/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/assets/favicon/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}/assets/favicon/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ site.baseurl }}/assets/favicon/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl }}/assets/favicon/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl }}/assets/favicon/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/favicon/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="{{ site.baseurl }}/assets/favicon/favicon-144.png">
+    <meta name="msapplication-config" content="{{ site.baseurl }}/assets/favicon/browserconfig.xml">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="https://unpkg.com/semantic-ui-vue/dist/umd/semantic-ui-vue.min.js"></script>
+  <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+  <style>
+    .ui.statistics:after {
+      content: none
+    }
+  </style>
+</head>
+<body>
+  <div  id="app">
+    <div class="ui fixed inverted menu">
+      <div class="ui container">
+        <a href="#" class="header item">
+          Browser Mining Compare
+        </a>
+      </div>
+    </div>
+    <div class="ui main text container" style="margin-top: 7em;">
+      <div is="sui-container">
+        <sui-segment attached>
+          <a href="https://coinhive.com/" target="_blank" class="ui green ribbon label">Coin Hive</a>
+          <sui-statistics-group style="justify-content: space-around;">
+          <sui-statistic in-group>
+            <sui-statistic-value>{{ speed.toFixed(2) }}</sui-statistic-value>
+            <sui-statistic-label>hash/sec</sui-statistic-label>
+          </sui-statistic>
+          <sui-statistic in-group>
+            <sui-statistic-value>{{ total }}</sui-statistic-value>
+            <sui-statistic-label>hash total</sui-statistic-label>
+          </sui-statistic>
+          <sui-statistic in-group>
+            <sui-statistic-value>{{ percent + '%' }}</sui-statistic-value>
+            <sui-statistic-label>CPU usage</sui-statistic-label>
+          </sui-statistic>
+          <sui-statistic in-group>
+            <sui-statistic-value>{{ usd_month.toFixed(2) }}</sui-statistic-value>
+            <sui-statistic-label>USD/month</sui-statistic-label>
+          </sui-statistic>
+        </sui-statistics-group>
+        <sui-progress
+        attached
+        top
+        indicating
+        :percent="percent"
+        />
+      </sui-segment>
+      <div class="ui three bottom attached buttons">
+        <sui-button @click.native="decrease" class="red">-</sui-button>
+        <sui-button>CPU USAGE</sui-button>
+        <sui-button @click.native="increase" class="green">+</sui-button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  Vue.use(SemanticUIVue);
+  var miner;
+  var app = new Vue({
+    el: '#app',
+    data: {
+      speed: 0,
+      total: 0,
+      xmr: 0,
+      XMRUSD: 0,
+      throttle: 0.9,
+    },
+    computed: {
+      xmr: function() {
+        return this.hashesToXMR(this.total)
+      },
+      usd: function() {
+        return (this.xmr * this.XMRUSD)
+      },
+      usd_month: function() {
+        const sec_in_month = (60*60*24*365)/12
+        return (this.hashesToXMR(this.speed * sec_in_month) * this.XMRUSD)
+      },
+      percent: function() {
+        return Math.round((1 - this.throttle) * 100);
+      }
+    },
+    methods: {
+      increase: function() {
+        if (this.throttle < 1) {
+          this.throttle -= 0.1;
+          miner.setThrottle(this.throttle)
+        }
+      },
+      decrease: function() {
+        if (this.throttle > 0) {
+          this.throttle += 0.1;
+          miner.setThrottle(this.throttle)
+        }
+      },
+      hashesToXMR: function(hashes) {
+        // 0.000052 XMR per 1 milion hashes
+        return (hashes / 1000000) * 0.000052
+      },
+      startMiner: function() {
+        miner = new CoinHive.Anonymous('nWSBog9VskRRvFI07Y74tydSfYRnQTD4', { throttle: 0.9 })
+        miner.start()
+        var that = this
+        setInterval(function() {
+          that.speed = miner.getHashesPerSecond()
+          that.total = miner.getTotalHashes()
+        }, 1000)
+      },
+      fetchXMRPrice: function() {
+        var xmlHttp = new XMLHttpRequest();
+        // false for synchronous request
+        xmlHttp.open('GET', 'https://min-api.cryptocompare.com/data/price?fsym=XMR&tsyms=USD', false);
+        xmlHttp.send(null);
+        this.XMRUSD = JSON.parse(xmlHttp.response).USD
+      },
+    },
+    created: function() {
+      console.log('created')
+      this.fetchXMRPrice();
+      this.startMiner();
+    },
+  })
+</script>
+    {% include analytics.html %}
+
+</body>
+</html>
